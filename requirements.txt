@@ -1,0 +1,7 @@
+tqdm
+pydantic
+pypdf
+rich
+entence-transformers 
+faiss-cpu 
+numpy
