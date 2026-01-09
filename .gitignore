@@ -7,12 +7,3 @@ __pycache__/
 # mac
 .DS_Store
 
-# outputs / data artifacts
-data/extracted/
-data/**/indexed_chunks.jsonl
-data/**/chunks.jsonl
-*.npy
-
-# optional: PDFs/videos if you generate them locally
-*.pdf
-*.mp4

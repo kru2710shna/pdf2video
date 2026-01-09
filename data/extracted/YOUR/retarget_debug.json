@@ -1,0 +1,82 @@
+[
+  {
+    "scene_id": "s01",
+    "from_page": 1,
+    "to_page": 1,
+    "counts": {
+      "Key idea": 0,
+      "Main contribution": 0
+    }
+  },
+  {
+    "scene_id": "s02",
+    "from_page": 1,
+    "to_page": 1,
+    "counts": {
+      "Abstract We present high quality image synthesis results": 1,
+      "Our best results are obtained by training on": 1
+    }
+  },
+  {
+    "scene_id": "s03",
+    "from_page": 16,
+    "to_page": 5,
+    "counts": {
+      "Source 1000 steps 875 steps 750 steps 625": 0,
+      "These terms train the network to denoise data": 1
+    }
+  },
+  {
+    "scene_id": "s04",
+    "from_page": 1,
+    "to_page": 2,
+    "counts": {
+      "To summarize, we can train the reverse process": 0,
+      "Despite their sample quality, our models do not": 1
+    }
+  },
+  {
+    "scene_id": "s05",
+    "from_page": 1,
+    "to_page": 4,
+    "counts": {
+      "To obtain discrete log likelihoods, we set the": 1,
+      "4.2 Reverse process parameterization and training objective ablation": 0
+    }
+  },
+  {
+    "scene_id": "s06",
+    "from_page": 1,
+    "to_page": 15,
+    "counts": {
+      "D Samples Additional samples Figure 11, 13, 16,": 1,
+      "0 200 400 600 800 1,000 2 4": 0
+    }
+  },
+  {
+    "scene_id": "s07",
+    "from_page": 9,
+    "to_page": 1,
+    "counts": {
+      "Broader Impact Our work on diffusion models takes": 0,
+      "Abstract We present high quality image synthesis results": 1
+    }
+  },
+  {
+    "scene_id": "s08",
+    "from_page": 8,
+    "to_page": 8,
+    "counts": {
+      "The reverse process produces high-quality reconstructions, and plausible": 1,
+      "Our rate-distortion curves are computed over time in": 1
+    }
+  },
+  {
+    "scene_id": "s09",
+    "from_page": 9,
+    "to_page": 1,
+    "counts": {
+      "8 6 Conclusion We have presented high quality": 0
+    }
+  }
+]

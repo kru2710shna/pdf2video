@@ -1,0 +1,100 @@
+[
+  {
+    "page_1based": 1,
+    "dpi": 180,
+    "highlights": {
+      "Key idea": 0,
+      "Main contribution": 0
+    },
+    "total_rects": 0,
+    "scene_id": "s01",
+    "page": 1
+  },
+  {
+    "page_1based": 1,
+    "dpi": 180,
+    "highlights": {
+      "Abstract We present high quality image synthesis results": 2,
+      "Our best results are obtained by training on": 1
+    },
+    "total_rects": 3,
+    "scene_id": "s02",
+    "page": 1
+  },
+  {
+    "page_1based": 5,
+    "dpi": 180,
+    "highlights": {
+      "Source 1000 steps 875 steps 750 steps 625": 0,
+      "These terms train the network to denoise data": 1
+    },
+    "total_rects": 1,
+    "scene_id": "s03",
+    "page": 5
+  },
+  {
+    "page_1based": 2,
+    "dpi": 180,
+    "highlights": {
+      "To summarize, we can train the reverse process": 2,
+      "Despite their sample quality, our models do not": 1
+    },
+    "total_rects": 3,
+    "scene_id": "s04",
+    "page": 2
+  },
+  {
+    "page_1based": 4,
+    "dpi": 180,
+    "highlights": {
+      "To obtain discrete log likelihoods, we set the": 1,
+      "4.2 Reverse process parameterization and training objective ablation": 0
+    },
+    "total_rects": 1,
+    "scene_id": "s05",
+    "page": 4
+  },
+  {
+    "page_1based": 15,
+    "dpi": 180,
+    "highlights": {
+      "D Samples Additional samples Figure 11, 13, 16,": 4,
+      "0 200 400 600 800 1,000 2 4": 0
+    },
+    "total_rects": 4,
+    "scene_id": "s06",
+    "page": 15
+  },
+  {
+    "page_1based": 1,
+    "dpi": 180,
+    "highlights": {
+      "Broader Impact Our work on diffusion models takes": 0,
+      "Abstract We present high quality image synthesis results": 2
+    },
+    "total_rects": 2,
+    "scene_id": "s07",
+    "page": 1
+  },
+  {
+    "page_1based": 8,
+    "dpi": 180,
+    "highlights": {
+      "The reverse process produces high-quality reconstructions, and plausible": 2,
+      "Our rate-distortion curves are computed over time in": 2
+    },
+    "total_rects": 4,
+    "scene_id": "s08",
+    "page": 8
+  },
+  {
+    "page_1based": 1,
+    "dpi": 180,
+    "highlights": {
+      "8 6 Conclusion We have presented high quality": 0
+    },
+    "total_rects": 0,
+    "scene_id": "s09",
+    "page": 1
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "model_name": "all-mpnet-base-v2",
+  "dim": 768,
+  "chunks_indexed": 18,
+  "drop_junk": true,
+  "has_section_tags": true,
+  "has_text_embed": true,
+  "indexed_chunks_file": "indexed_chunks.jsonl",
+  "batch_size": 32
+}

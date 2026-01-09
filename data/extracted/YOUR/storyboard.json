@@ -1,0 +1,228 @@
+{
+  "schema_version": "storyboard.v1",
+  "created_at": "2026-01-07T07:59:20.377304+00:00",
+  "target_duration_sec": 105,
+  "total_duration_sec": 105,
+  "scene_count": 9,
+  "scenes": [
+    {
+      "scene_id": "s01",
+      "title": "Hook: Why generative modeling is hard",
+      "duration_sec": 10,
+      "narration": "Generating realistic data is hard because the space of possible outputs is huge and the training signal can be unstable. This paper motivates a method that breaks generation into many small steps, making it easier to control and learn. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "High-dimensional generation is hard",
+        "We need stable learning + good samples"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 1,
+        "highlight_phrases": [
+          "Key idea",
+          "Main contribution"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0000"
+      ],
+      "source_quotes": []
+    },
+    {
+      "scene_id": "s02",
+      "title": "Main contribution (Abstract only)",
+      "duration_sec": 12,
+      "narration": "The paper proposes diffusion-based generative modeling: start from noise and gradually refine it into data. It frames generation as an iterative denoising process that can be trained with a clear objective. The goal is high-quality samples while keeping the procedure structured and inspectable.",
+      "on_screen_text": [
+        "What the paper proposes",
+        "High-level contribution"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 1,
+        "highlight_phrases": [
+          "Abstract We present high quality image synthesis results",
+          "Our best results are obtained by training on"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0000"
+      ],
+      "source_quotes": [
+        "Abstract We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by"
+      ]
+    },
+    {
+      "scene_id": "s03",
+      "title": "Core idea: iterative noising \u2192 denoising",
+      "duration_sec": 12,
+      "narration": "Diffusion models define two linked processes. A forward process progressively adds noise to data, and a learned reverse process removes that noise step by step to create a sample. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "Forward: add noise",
+        "Reverse: remove noise"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 5,
+        "highlight_phrases": [
+          "Source 1000 steps 875 steps 750 steps 625",
+          "These terms train the network to denoise data"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0026",
+        "YOUR_0008"
+      ],
+      "source_quotes": [
+        "Source 1000 steps 875 steps 750 steps 625 steps 500 steps 375 steps 250 steps 125 steps 0 steps Figure"
+      ]
+    },
+    {
+      "scene_id": "s04",
+      "title": "Reverse process: neural net predicts denoising",
+      "duration_sec": 12,
+      "narration": "The reverse chain is learned rather than hand-coded. A neural network predicts the denoising direction at each step, guiding the sample from noisy states toward a clean output. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "Reverse is learned",
+        "Neural net guides denoising"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 2,
+        "highlight_phrases": [
+          "To summarize, we can train the reverse process",
+          "Despite their sample quality, our models do not"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0006",
+        "YOUR_0002"
+      ],
+      "source_quotes": [
+        "To summarize, we can train the reverse process mean function approximator \u00b5\u03b8 to predict \u02dc\u00b5t, or by modifying its parameterization,"
+      ]
+    },
+    {
+      "scene_id": "s05",
+      "title": "Training objective (high-level)",
+      "duration_sec": 12,
+      "narration": "Training teaches the model to perform many small denoising corrections. Instead of one big jump from noise to data, the objective encourages accurate stepwise transitions that compound into a good sample. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "Optimize a training loss",
+        "Learn reverse denoising"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 4,
+        "highlight_phrases": [
+          "To obtain discrete log likelihoods, we set the",
+          "4.2 Reverse process parameterization and training objective ablation"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0006",
+        "YOUR_0009"
+      ],
+      "source_quotes": [
+        "To obtain discrete log likelihoods, we set the last term of the reverse process to an independent discrete decoder derived"
+      ]
+    },
+    {
+      "scene_id": "s06",
+      "title": "Results: samples and evaluation",
+      "duration_sec": 14,
+      "narration": "The paper evaluates the approach by showing generated samples and reporting experimental results on the tested data setting. The key takeaway is that the iterative denoising procedure produces realistic outputs under the paper\u2019s evaluation setup. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "Qualitative samples (Fig.)",
+        "Dataset + evaluation summary"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 15,
+        "highlight_phrases": [
+          "D Samples Additional samples Figure 11, 13, 16,",
+          "0 200 400 600 800 1,000 2 4"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0025",
+        "YOUR_0026"
+      ],
+      "source_quotes": [
+        "D Samples Additional samples Figure 11, 13, 16, 17, 18, and 19 show uncurated samples from the diffusion models trained"
+      ]
+    },
+    {
+      "scene_id": "s07",
+      "title": "Why it matters",
+      "duration_sec": 12,
+      "narration": "Why this matters is the engineering trade-off: a complex generation problem becomes a sequence of simpler subproblems. That structure improves controllability and makes the system easier to debug and extend. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "Structured generation",
+        "More controllable training"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 1,
+        "highlight_phrases": [
+          "Broader Impact Our work on diffusion models takes",
+          "Abstract We present high quality image synthesis results"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0014",
+        "YOUR_0000"
+      ],
+      "source_quotes": [
+        "Broader Impact Our work on diffusion models takes on a similar scope as existing work on other types of deep"
+      ]
+    },
+    {
+      "scene_id": "s08",
+      "title": "Limitations and open questions",
+      "duration_sec": 10,
+      "narration": "The method is powerful, but it can be expensive at sampling time because generation may require many steps. The paper highlights open directions to improve efficiency while keeping sample quality. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "Sampling cost",
+        "Open directions"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 8,
+        "highlight_phrases": [
+          "The reverse process produces high-quality reconstructions, and plausible",
+          "Our rate-distortion curves are computed over time in"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0012",
+        "YOUR_0013"
+      ],
+      "source_quotes": [
+        "The reverse process produces high-quality reconstructions, and plausible interpolations that smoothly vary attributes such as pose, skin tone, hairstyle, expression"
+      ]
+    },
+    {
+      "scene_id": "s09",
+      "title": "Outro",
+      "duration_sec": 11,
+      "narration": "In summary, the paper frames generative modeling as iterative denoising from noise back to data. The main idea is to learn small, reliable transitions and compose them into high-quality generation. This explanation is grounded in the cited chunks and avoids copying them verbatim.",
+      "on_screen_text": [
+        "Key takeaway",
+        "Next directions (from text)"
+      ],
+      "visual_plan": {
+        "type": "pdf_highlight",
+        "page": 1,
+        "highlight_phrases": [
+          "8 6 Conclusion We have presented high quality"
+        ]
+      },
+      "source_chunk_ids": [
+        "YOUR_0014"
+      ],
+      "source_quotes": [
+        "8 6 Conclusion We have presented high quality image samples using diffusion models, and we have found connections among diffusion"
+      ]
+    }
+  ]
+}
